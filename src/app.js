@@ -5,10 +5,8 @@ const mysql = require('mysql')
 const myConnection = require('express-myconnection');
 const app = express();
 
-
 //import routes
 const usersRoutes = require('./routes/users');
-
 
 //Settings
 
@@ -25,9 +23,6 @@ app.use(myConnection(mysql,{
     port: 3306,
     database: 'examen'
 }, 'single'));
-
-
-
 
 //Routes
 
